@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #1065d5;
+}
+
+header{
+    height: 100%;
+    background: #0f9ef8;
+    display: flex;
+    box-shadow: -2px 10px 10px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -2px 10px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 10px 10px 0px rgba(0,0,0,0.75);
+}
+
+#pinguimzao{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    margin-left: 30px;
+    margin-top: 30px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#logo{
+  margin-right: 25px;
+  margin-left: 200px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+
+}
+
+.baixar{
+    margin-left: 400px;
+    display: flex;
+    margin-top: 15px;
+}
+
+button{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background: #fbe15a;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+main{
+    margin-top: 30px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+
+.imagemzinha{
+    float: left; 
+    margin-right: 20px;
+    width: 300px;
+    margin-left: 70px;
+    margin-top: 25px;
+}
+
+.imagemzinha p, h1{
+    clear: left;
+    color: white;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+footer div small {
+    margin-right: 10px;
+}
+.slider {
+    position: relative;
+    width: 80%;
+    overflow: hidden;
+    border: 2px solid #ccc;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+    width: 100%;
+    border-right: 2px solid #ccc;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+button.prev {
+    left: 10px;
+    display: flex;
+    background: none;
+}
+
+button.next {
+    right: 10px;
+    display:flex ;
+    background: none;
+}
